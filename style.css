@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET CSS */
+
+
+
+body {
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+}
+img {
+	max-width: 100%;
+}
+
+
+/* ---- POSITION LOGO ET FLECHES ---- */
+a > .logo {
+	position: fixed;
+	z-index: 90;
+	width: 80px;
+	top: 20px;
+	left: calc(50% - 40px);
+}
+.move {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 99;
+}
+.move > button {
+	background-color: rgba(0,0,0,0.5);
+	border: 1px #fff solid;
+	border-radius: 4px;
+	color: #fff;
+	padding: 10px;
+	margin: 0 5px;
+}
+.move > button:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+.move > button[disabled] {
+	opacity: 0.2;
+	cursor: not-allowed;
+}
+.move > .scroll-top {
+	display: block;
+	margin-left: 52px;
+	margin-bottom: 10px;
+}
+
+
+/* ---- PAGE ---- */
+.page {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+}
+/* ---- SOUS-PARTIE ---- */
+.sub {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	min-height: 100vh;
+	left: 0;
+}
+.sub > .relative {
+	position: relative;
+	overflow-y: scroll;
+	height: 100vh;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.sub > .relative > h2 {
+	font-size: 3.5em;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sub > .relative > h2::before, .sub > .relative > h2::after {
+	content: '';
+	display: inline-block;
+	margin: 20px;
+	width: 100px;
+	height: 2px;
+	margin-bottom: 20px;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	transform: rotate(15deg);
+}
+.sub > .relative > h2::after {
+	transform: rotate(-15deg);
+}
+
+
+
+/* ---- PAGE UN ---- */
+.un {
+	background-color: #A0EBCB;
+}
+.un > h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	text-align: center;
+	margin-top: 250px;
+	text-transform: uppercase;
+}
+.un > h1 > span {
+	display: block;
+	font-size: 0.9em;
+}
+.un > h1 > small {
+	font-size: 0.2em;
+	color: #fff;
+	display: block;
+}
+.un > h1 > small::before, .un > h1 > small::after {
+	content: '';
+	display: inline-block;
+	margin: 0 5px 5px 5px;
+	width: 55px;
+	height: 1px;
+	background-color: #fff;
+	box-shadow: rgba(0,0,0,0.6) 1px 1px 1px;
+}
+.un > h1 > small:first-of-type:before, h1 > small:first-of-type:after {
+	width: 90px;
+}
+
+
+/* ---- PAGE DEUX ---- */
+.deux {
+	background-color: #78B6A4;
+	left: 100%;
+}
+.deux > h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	text-align: center;
+	margin-top: 120px;
+	text-transform: uppercase;
+}
+.deux > h1::before, .deux > h1::after {
+	content: '';
+	display: inline-block;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.1);
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	transform: rotate(135deg);
+}
+.deux > h1:after {
+	transform: rotate(-45deg);
+}
+.sub-deux {
+	background-color: #000;
+}
+
+
+
+/* ---- PAGE TROIS ---- */
+.trois {
+	background-color: #408DA7;
+	left: 200%;
+}
+.trois > h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	text-align: center;
+	margin-top: 120px;
+	text-transform: uppercase;
+}
+.trois > h1::before, .trois > h1::after {
+	content: '';
+	display: inline-block;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.1);
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	transform: rotate(135deg);
+}
+.trois > h1:after {
+	transform: rotate(-45deg);
+}
+.sub-trois {
+	background-color: #408DA7;
+}
+
+
+/* ---- PAGE QUATRE ---- */
+.quatre {
+	background-color: #1C6BA0;
+	left: 300%;
+}
+.quatre > h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 1px 1px;
+	text-align: center;
+	margin-top: 120px;
+	text-transform: uppercase;
+}
+.quatre > h1::before, .quatre > h1::after {
+	content: '';
+	display: inline-block;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.1);
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	transform: rotate(135deg);
+}
+.quatre > h1:after {
+	transform: rotate(-45deg);
+}
+
+
+/* ---- RESPONSIVITE ---- */
+@media only screen and (max-width: 769px) {
+	body {
+		overflow: hidden;
+	}
+	a > .logo {
+		width: 160px;
+		left: calc(50% - 80px);
+	}
+	.move {
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+	}
+	.move > button {
+		padding: 5px;
+		margin: 0 3px;
+	}
+	.move > .scroll-top {
+		margin-left: 36px;
+		margin-bottom: 8px; 
+	}
+	.deux > h1, .trois > h1, .quatre > h1 {
+		font-size: 2.5em;
+	}
+	.deux > h1::before, .deux > h1::after,
+	.trois > h1::before, .trois > h1::after,
+	.quatre > h1::before, .quatre > h1::after {
+		margin: 10px;
+		width: 16px;
+		height: 16px;
+	}
+}
